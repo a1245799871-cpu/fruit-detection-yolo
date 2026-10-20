@@ -1,0 +1,41 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- 训练产物（体积大，不要提交）----
+runs/
+*.zip
+runs.zip
+train-*/
+predict-*/
+
+# ---- 打包产物 ----
+build/
+dist/
+*.spec
+output/
+
+# ---- 预训练权重（体积大，按需下载）----
+yolov8n.pt
+yolo11n.pt
+yolo11s.pt
+yolo11m.pt
+yolo26n.pt
+*.pt
+!weights/best.pt
+
+# ---- 数据集（不上传，保持仓库精简）----
+# 数据集（203 张水果图片 + 标注）不上传到 GitHub。
+# 如需复现训练，请自行准备数据，或联系作者获取。
+data/
+
+# ---- 系统 / 编辑器 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
